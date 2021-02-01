@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root{
+   --primary: #4838A8;
+}
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+   font-family: 'Raleway', sans-serif;
+}
+ul{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+img{
+   width:45px;
+   height:28px;
+   margin-right: 10px;
+}
+button{
+   padding: 10px 20px;
+   font-size: 15px;
+   border:none;
+   outline:none;
+   cursor:pointer;
+   margin-left: 10px;
+}
+.signupBtn{
+   background-color: var(--primary);
+   color:white;
+}
+.buttons{
+   margin-top: 10px;
+}
+button:hover{
+   opacity: 0.9;
+}
+.container{
+   width: 100vw;
+   height: 100vh;
+   background: url('../images/bgPexel.jpg') no-repeat center center/cover;
+}
+nav{
+   background-color: var(--primary);
+   opacity: 0.9;
+   color: white;
+}
+.navWrapper{
+   max-width: 1200px;
+   margin:0 auto;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+.logo{
+   display: flex;
+   font-size: 15px;
+}
+.links{
+   display:flex;
+}
+.links a{
+   margin-left: 30px;
+}
+.showcase{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height:75vh;
+   color: white;
+}
+.heading{
+   font-size: 80px;
+   text-align: center;
+}
+.subheading{
+   font-size:25px;
+   padding: 15px 0;
+   text-align: center;
+}
+#mouse{
+   font-size: 30px;
+   color:white;
+   position: absolute;
+   left: 50%;
+   animation: move 1s infinite alternate;
+}
+@keyframes move{
+   0%{
+      transform: translateY(0);
+   }
+   100%{
+      transform: translateY(20px);
+   }
+}
+.overlay{
+   background-color:rgba(0,0,0,0.7);
+   height: 100%;
+   width: 100%;
+}
+@media (max-width:880px){
+   .heading{
+      font-size: 60px;
+   }
+   .subheading{
+      font-size: 20px;
+   }
+}
+@media (max-width:703px){
+   .heading{
+      font-size: 40px;
+   }
+   .subheading{
+      font-size: 17px;
+   }
+}
+@media (max-width:500px){
+   .navWrapper{
+      flex-direction: column;
+   }
+   .logo{
+      margin-bottom: 15px;
+   }
+   #mouse{
+      display: none;
+   }
+}
